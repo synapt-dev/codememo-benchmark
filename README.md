@@ -38,7 +38,7 @@ gr run benchmark-mem0     # mem0 only
 | Component | Version | Commit |
 |-----------|---------|--------|
 | synapt | v0.6.2 | `cc32627` |
-| synapt-private | eval code | `7dc154b` |
+| eval harness | kept privately | — |
 | mem0 | v1.0.5 | tag `v1.0.5` |
 | mem0ai (pip) | 1.0.5 | — |
 | Judge model | gpt-4o-mini | — |
@@ -55,7 +55,7 @@ gr run benchmark-mem0     # mem0 only
 
 ## Adding a New System
 
-Implement the `SystemUnderTest` protocol in `synapt-private/evaluation/codememo/eval.py`:
+Implement the `SystemUnderTest` protocol in your evaluation harness:
 
 ```python
 class SystemUnderTest(Protocol):
